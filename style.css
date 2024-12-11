@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #000033, #000066);
+  cursor: crosshair;a
+  font-family: "Roboto", serif;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fullscreenBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#fullscreenBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+button {
+  padding: 2px 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.type1 {
+  background: #ff4444;
+}
+.type2 {
+  background: #44ff44;
+}
+.type3 {
+  background: #4444ff;
+}
+.type4 {
+  background: #ffff44;
+}
+.type5 {
+  background: #ff44ff;
+}
+.type6 {
+  background: #44ffff;
+}
+.type7 {
+  background: #ff8844;
+}
+.type8 {
+  background: #8844ff;
+}
+.type9 {
+  background: #ff4488;
+}
+.type10 {
+  background: #44ff88;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.snowflake {
+  position: absolute;
+  color: white;
+  pointer-events: none;
+}
+
+canvas {
+  filter: blur(0.5px);
+}
